@@ -1,0 +1,16 @@
+{
+  "project_version": "0.1.0",
+  "dataset": "URL-Phish",
+  "dataset_version": 2,
+  "dataset_doi": "10.17632/65z9twcx3r.2",
+  "dataset_page": "https://data.mendeley.com/datasets/65z9twcx3r/2",
+  "label_mapping": {"0": "legitimate", "1": "phishing"},
+  "published_expected_rows": 116600,
+  "published_expected_phishing": 16600,
+  "seed": 42,
+  "split_folds": 5,
+  "held_out_fold": 0,
+  "decision_threshold": 0.5,
+  "logistic_regression": {"C": 1.0, "max_iter": 2000, "class_weight": "balanced", "solver": "lbfgs"},
+  "random_forest": {"n_estimators": 300, "min_samples_leaf": 2, "max_features": "sqrt", "class_weight": "balanced_subsample", "n_jobs": 4}
+}
